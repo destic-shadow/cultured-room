@@ -1,0 +1,139 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Solid black background */
+    color: #e0e0e0; /* Light text color */
+    line-height: 1.6;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(31, 31, 31, 1); /* Solid header background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%; /* Ensure header takes full width */
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #ffffff; /* Change link color to white */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* Lighter highlight on hover */
+}
+
+/* Main Content Styles */
+main {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    width: 100%; /* Ensure main takes full width */
+    padding: 20px; /* Add some padding */
+}
+
+/* Section styles */
+section {
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 800px; /* Limit the width of the section */
+    width: 100%; /* Ensure the section takes up the full width of its container */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Blog Post Styles */
+.blog-post {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    width: 100%; /* Full width of the section */
+    margin: 10px 0; /* Center spacing between posts */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent content overflow */
+     /* Center the text */
+}
+
+/* Featured Image Styles */
+.featured-image {
+    width: 100%; /* Make image full-width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+/* Blog Post Title Styles */
+.blog-post h2 {
+    margin: 10px 0;
+    text-align:left;
+}
+.blog-post a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: left;
+}
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%; /* Ensure footer takes full width */
+}
+
+/* Character List Styles */
+.character-list {
+    list-style: decimal; /* Numbered list */
+    padding-left: 20px;
+}
+
+.character-list li {
+    margin-bottom: 20px;
+    font-size: 1.2em; /* Slightly smaller font size */
+    color: #ffcc00; /* Same color as character name */
+    font-weight: none; /* Bold text */
+}
+
+.character-image {
+    width: 100%; /* Make image full-width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px; /* Spacing below image */
+}
+
+.character-list p {
+    font-size: 0.8em;
+    line-height: 1.4;
+    color: #ffffff;
+    font-weight: none;
+}
+
+/* Disqus Comment Section */
+#disqus_thread {
+    width: 100%; /* Ensure it takes up the full width of its container */
+    max-width: 800px; /* Limit the width to match the blog post section */
+    margin: 20px; /* Add some margin for spacing */
+    min-height: 300px; /* Ensure a minimum height for the Disqus comments */
+}
