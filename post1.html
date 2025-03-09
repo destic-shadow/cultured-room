@@ -1,57 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GENERAL 1</title>
-  <link rel="stylesheet" href="style.css">
-  
-  <!-- Favicon (GIF) -->
-  <link rel="icon" href="https://cdn.glitch.global/e91e719f-187c-4181-808a-828a092ba1c7/CR%20LOGO.gif?v=1729019091392" type="image/gif"> <!-- Update path here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GENERAL 1</title>
+    <link rel="stylesheet" href="post-style.css" />
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <h1>CULTURED ROOM</h1>
-    <nav>
-      <a href="index.html">HOME</a>
-      <a href="post1.html">GENERAL</a>
-    </nav>
-  </header>
+    <!-- Favicon (GIF) -->
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/e91e719f-187c-4181-808a-828a092ba1c7/CR%20LOGO.gif?v=1729019091392"
+      type="image/gif"
+    />
+  </head>
+  <body>
+    <!-- Header (Navbar) -->
+    <header>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="navbar-container">
+          <!-- Logo and Nav Links Container -->
+          <div class="logo-nav">
+            <div class="logo">
+              <img
+                src="https://cdn.glitch.global/fc201b9c-4c7b-4b7d-a66a-751c3be4cf56/cultured.gif?v=1730274136297"
+                alt="Logo"
+              />
+            </div>
+            <div class="nav-links">
+              <a href="/">Home</a>
+              <a href="post1.html">General</a>
+              <a href="minecraft.html">Minecraft</a>
+            </div>
+          </div>
 
-  <!-- Main Content -->
-  <main>
-    <section class="blog-post">
-      <h2>General 1</h2>
-      <img src="Untitled_Project_5.jpg" alt="Image for General 1" class="featured-image">
-      <p>This is the full content for the first blog post. You can provide detailed information about this topic here.</p>
-      <p>More detailed text about the post topic...</p>
-      <p>Additional insights and information...</p>
+          <!-- Search Bar Section -->
+          <div class="search-bar">
+            <input type="text" id="searchBar" placeholder="Search" />
+            <button class="search-button">
+              <img
+                src="https://cdn.glitch.global/fc201b9c-4c7b-4b7d-a66a-751c3be4cf56/1000123165-removebg-preview.png?v=1732039260335"
+                alt="Search Icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div id= "searchResults" class= "search-results-container"></div>
+      </nav>
+    </header>
+
+    <!-- Main Content Section (Blog Post) -->
+    <main>
+      <!-- Large Banner Image -->
+      <section class="banner">
+        <a href="https://discord.gg/MpTjPSNQPx" class="discord-link">
+          <img
+          src="https://cdn.glitch.global/fc201b9c-4c7b-4b7d-a66a-751c3be4cf56/Untitled_Project_9.jpg?v=1739058189001"
+          alt="Banner Image"
+          />
+        </a>
+      </section> 
+
+
+      <section class="blog-post">
+        <h2>General Chat Rules</h2>
+        <div class="rules-container">
+            <div class="rule-item">
+                <h3>1. Encourage Engagement</h3>
+                <p>Upvote comments to promote interaction and activity within our community.</p>
+            </div>
+            
+            <div class="rule-item">
+                <h3>2. Light-Hearted Humor</h3>
+                <p>Trolling is allowed as long as it's harmless and in good taste.</p>
+            </div>
+            
+            <div class="rule-item">
+                <h3>3. Respect Boundaries</h3>
+                <p>Avoid recruiting or advertising other chatrooms.</p>
+            </div>
+            
+            <div class="rule-item">
+                <h3>4. Keep It Respectful</h3>
+                <p>Maintain a positive tone; avoid trash-talking.</p>
+            </div>
+
+            <div class="hidden-rules">
+                <div class="rule-item">
+                    <h3>5. Stay On Topic</h3>
+                    <p>Keep discussions relevant to the community's interests.</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h3>6. No Spam</h3>
+                    <p>Avoid excessive messaging or repetitive content.</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h3>7. Be Mindful</h3>
+                    <p>Consider others when sharing content or expressing opinions.</p>
+                </div>
+            </div>
+
+            <button class="show-more-btn">Show More Rules</button>
+        </div>
+      </section>
     </section>
-  </main>
-<!-- Disqus Script -->
-      
-<div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-    this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = 'post1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    }; 
-    
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://culturedhub.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
- 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 CULTURED ROOM. All rights reserved.</p>
-  </footer>
-</body>
+</main>
+
+    <!-- Disqus Comment Section -->
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = window.location.href; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "post1"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+
+      (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src = "https://culturedhub.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+
+    <!-- Footer -->
+    <footer>
+      <p>All rights of the images go to the original creator.</p>
+      <p>&copy; 2024 CULTURED ROOM. All rights reserved.</p>
+    </footer>
+    <script>
+      document.querySelector('.show-more-btn').addEventListener('click', function() {
+        const hiddenRules = document.querySelector('.hidden-rules');
+        const btn = this;
+        
+        hiddenRules.classList.toggle('show');
+        btn.textContent = hiddenRules.classList.contains('show') ? 'Show Less' : 'Show More Rules';
+
+        // Add animation order to hidden rules
+        const ruleItems = hiddenRules.querySelectorAll('.rule-item');
+        ruleItems.forEach((item, index) => {
+          item.style.setProperty('--order', index);
+        });
+      });
+    </script>
+  </body>
 </html>
