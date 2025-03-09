@@ -5,67 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CULTURED ROOM</title>
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Favicon (GIF) -->
+    <link rel="stylesheet" href="scroll.css" />
     <link
       rel="icon"
       href="https://cdn.glitch.global/e91e719f-187c-4181-808a-828a092ba1c7/CR%20LOGO.gif?v=1729019091392"
       type="image/gif"
     />
-    <!-- Update path here -->
-
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header -->
     <header>
-      <h1>CULTURED ROOM</h1>
-      <nav>
-        <a href="#">HOME</a>
-        <a href="post1.html">GENERAL</a>
+      
+      
+      
+      
+      
+      
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="navbar-container">
+          <!-- Logo and Nav Links Container -->
+          <div class="logo-nav">
+            <div class="logo">
+              <img
+                src="https://cdn.glitch.global/fc201b9c-4c7b-4b7d-a66a-751c3be4cf56/cultured.gif?v=1730274136297"
+                alt="Logo"
+              />
+            </div>
+            <div class="nav-links">
+              <a href="/">Home</a>
+              <a href="post1.html">General</a>
+              <a href="minecraft.html">Minecraft</a>
+            </div>
+          </div>
+
+          <!-- Search Bar Section -->
+          <div class="search-bar">
+            <input type="text" id="searchBar" placeholder="Search" />
+            <button class="search-button">
+              <img
+                src="https://cdn.glitch.global/fc201b9c-4c7b-4b7d-a66a-751c3be4cf56/1000123165-removebg-preview.png?v=1732039260335"
+                alt="Search Icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div id= "searchResults" class= "search-results-container"></div>
       </nav>
     </header>
 
-    <!-- Main Content -->
+    <!-- Image Carousel -->
     <main>
-      <div class="blog-post">
-        <!-- Blog Post 1 -->
-        <section class="blog-content">
-          <h2>
-            <a href="post1.html" class="read-more">General 1</a>
-          </h2>
-          <a href="post1.html" class="featured-image">
-            <img
-            src="Untitled_Project_5.jpg"
-            alt="Image for General 1"
-           />
-          </a>
-          <p class="post-date">October 16, 2024</p>
-        </section>
-        
-        <section class="blog-contentt">
-          <h2>
-            <a href="topanime.html" class="read-more">Top 10 Strongest Characters in Anime</a>
-          </h2>
-          <img
-            src="https://via.placeholder.com/800x400"
-            alt="Image for Top 10 Strongest Characters in Anime"
-            class="featured-image"
-          />
-          <p class="post-date">October 18, 2024</p>
-        </section>
+      <section class="carousel">
+        <div class="carousel-wrapper">
+          <div
+            class="carousel-slide"
+            style="
+              background-image: url('https://cdn.glitch.global/fc201b9c-4c7b-4b7d-a66a-751c3be4cf56/Untitled_Project_11-1.jpg?v=1739058196957');
+            "
+          >
+            <div class="carousel-content">
+              <h2>General 1</h2>
+            </div>
+          <a href="post1.html" class="post1-c" style="display: block; width: 100%; height: 200%; text-decoration: none; color: inherit;"></a>
+          </div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: url('https://cdn.glitch.global/fc201b9c-4c7b-4b7d-a66a-751c3be4cf56/Untitled_Project_9.jpg?v=1739058189001');
+            "
+          >
+            
+            <div class="carousel-content">
+              <h2>Join Our Discord Server!</h2>
+            </div>
+            <a href="https://discord.gg/MpTjPSNQPx" class="discord-link-c" style="display: block; width: 100%; height: 200%; text-decoration: none; color: inherit;"></a>
+          </div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: url('https://cdn.glitch.global/fc201b9c-4c7b-4b7d-a66a-751c3be4cf56/Absolute%20Scam.png?v=1731822225889');
+            "
+          >
+            <div class="carousel-content">
+              <h2>Top 10 Strongest Characters in Anime</h2>
+            </div>
+          <a href="top10anime.html" class="top10-c" style="display: block; width: 100%; height: 200%; text-decoration: none; color: inherit;"></a>
+          </div>
+        </div>
+        <button class="carousel-control prev">❮</button>
+        <button class="carousel-control next">❯</button>
+      </section>
 
-        <!-- Add more blog posts and pages similarly -->
-      </div>
+      <!-- Large Banner Image -->
+      <section class="banner">
+        <a href="https://discord.gg/MpTjPSNQPx" class="discord-link">
+          <img
+          src="https://cdn.glitch.global/fc201b9c-4c7b-4b7d-a66a-751c3be4cf56/Untitled_Project_9.jpg?v=1739058189001"
+          alt="Banner Image"
+          />
+        </a>
+      </section> 
+      
+      <!-- Posts Section -->
+      <section class="posts">
+        <h2>Posts</h2>
+
+        <!-- First Post (Wrapped with <a>) -->
+        <div class="blog-post">
+          <section class="blog-content">
+            <a href="post1.html" class="blog-post-link">
+              <h2>General 1</h2>
+              <img 
+                src="https://cdn.glitch.global/fc201b9c-4c7b-4b7d-a66a-751c3be4cf56/Untitled_Project_11-1.jpg?v=1739058196957"
+                alt="Image for General 1"
+                class="featured-image"
+              />
+              <p class="post-date">October 16, 2024</p>
+            </a>
+          </section>
+        </div>
+
+        <!-- Second Post (New Post, Wrapped with <a>) -->
+        <div class="blog-post">
+          <section class="blog-content">
+            <a href="top10anime.html" class="blog-post-link">
+              <h2>Top 10 Strongest Characters in Anime</h2>
+              <img
+                src="https://cdn.glitch.global/fc201b9c-4c7b-4b7d-a66a-751c3be4cf56/strongestanimetitle.jpg?v=1739737570559"
+                alt="Image for Top 10 Anime"
+                class="featured-image"
+              />
+              <p class="post-date">October 18, 2024</p>
+            </a>
+          </section>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <p>All rights of the images go to the orignal creator.</p>
+      <p>All rights of the images go to the original creator.</p>
       <p>&copy; 2024 CULTURED ROOM. All rights reserved.</p>
     </footer>
-    
-     <!-- JavaScript -->
-  <script src="disqus.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
